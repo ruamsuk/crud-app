@@ -17,7 +17,6 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements AfterViewInit {
-  title = 'crud-app';
   displayedColumns: string[] = [
     'no', 'firstName', 'lastName', 'email', 'gender', 'company',
      'dob', 'education', 'experience', 'package', 'action'
