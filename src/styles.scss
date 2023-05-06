@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@use 'node_modules/@ngneat/hot-toast/src/styles/styles.scss';
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Thasadith&family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.sarabun {
+  font-family: 'Sarabun', sans-serif !important;
+  font-size: 1rem;
+}
+
+.prompt {
+  font-family: 'Prompt', sans-serif !important;
+  font-size: 1rem;
+}
+
+.cell-align {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+}
+
+.mat-mdc-table .mat-mdc-header-cell {
+  background: #ede8e8 !important;
+}
+
+.mdc-data-table__cell {
+  font-family: 'Sarabun', sans-serif;
+  font-size: 16px;
+}
+
+.mat-mdc-table .mat-mdc-row:hover {
+  cursor: pointer;
+  background: #f4f0f0 !important;
+}
