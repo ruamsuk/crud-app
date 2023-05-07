@@ -79,8 +79,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   onEditUser(data: User) {
-    const dialogRef = this.dialog.open(EmpAddEditComponent, { data });
-    dialogRef.afterClosed().subscribe(() => data = null)
+    this.dialog.open(EmpAddEditComponent, { data });
   }
 
   deleteMember(row: User) {
@@ -104,6 +103,6 @@ export class AppComponent implements AfterViewInit {
             )
             .subscribe()
         }
-      })
+      });
   }
 }

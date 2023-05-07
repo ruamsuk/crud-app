@@ -58,7 +58,7 @@ export class EmpAddEditComponent implements OnInit {
 
     const userData = this.empForm.value;
 
-    if (this.data) {
+    if (this.data) {  // update
       const user = {...userData, id: this.data.id};
       this.userService.updateUser(user).pipe(
         this.toast.observe({
@@ -67,7 +67,7 @@ export class EmpAddEditComponent implements OnInit {
           error: ({message}) => `${message}`
         })
       ).subscribe(() => this.closeDialog());
-    } else {
+    } else {  // add new
       this.userService.addUser(userData)
         .pipe(
           this.toast.observe({
